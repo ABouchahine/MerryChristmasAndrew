@@ -1,0 +1,119 @@
+/************************** HTML Elements ********************/
+
+body {
+  text-align: center;
+  background-color: #000;
+}
+
+a {
+  color: inherit;
+}
+
+
+
+/*************************** Classes ************************/
+
+.download-button:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
+.colored-section {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* Containers */
+.container-fluid {
+  padding: 3% 5%;
+}
+
+/* Footer Sections */
+.social-icon {
+  margin: 20px 10px;
+}
+
+.copyright {
+  font-size: .75rem;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Header */
+
+.header-image {
+  position: relative;
+  text-align: center;
+  background-color: #000;
+}
+
+.header-text {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+
+.container {
+  background-color: #000;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+/* Nav Bar */
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav.link {
+  font-family: "Montserrat-Light";
+  font-size: 1.2rem;
+}
+
+
+/* Gallery Page */
+
+img{ max-width:100%;}
+
+.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
+.gallery_box{ padding:0;display: flow-root;}
+
+.gallery_box li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.gallery_box li img{-webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;}
+.gallery_box li:nth-child(even) {
+    height: 304px;
+}
+.gallery_box li:nth-child(odd) {
+    height: 438px;
+}
+.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
+.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
+.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
+.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
