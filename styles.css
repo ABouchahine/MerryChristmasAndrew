@@ -48,6 +48,9 @@ a {
   position: relative;
   text-align: center;
   background-color: #000;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .header-text {
@@ -90,10 +93,6 @@ a {
 
 /* Testimonials */
 
-#testimonials {
-  background-color: #fff;
-}
-
 .testimonial-img {
   width: 10%;
   border-radius: 100%;
@@ -113,7 +112,7 @@ a {
 
 /* Gallery Page */
 
-img{ max-width:100%;}
+.gallery_box img{ max-width:100%;}
 
 .gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
 .gallery_box{ padding:0;display: flow-root;}
